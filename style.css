@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --yellow:hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --graylight: hsl(0, 0%, 42%);
+    --graydark: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Figtree", sans-serif;
+    background-color: var(--yellow);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main, header, section{
+    display: inherit;
+    flex-direction: column;
+}
+
+main{ 
+    border: 2px, solid, var(--graydark);
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 9px 8px 14px 2px rgba(0,0,0,1);
+    padding: 1.5rem;
+    width: 400px; 
+}
+
+header > img{ 
+    border-radius: 15px; 
+    margin-bottom: 1.5rem;
+}
+
+header > span{ margin-bottom: 0.8rem; }
+
+.content-tag{
+    padding: 0.5rem;
+    font-weight: 600;
+    background-color: var(--yellow);
+    width: fit-content;
+    border-radius: 5px;
+}
+
+section{ gap: 1.2rem; }
+
+section > p{
+    font-size: 16px;
+    color: var(--graylight);
+}
+
+.profile-info{ 
+    display: inherit; 
+    gap: 1rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+.profile-info > img{ height:2.5rem; }
